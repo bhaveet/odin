@@ -13,7 +13,8 @@
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "noImplicitReturns": false,
+        "experimentalDecorators": true, 
         "lib": ["es2015", "es2016", "dom", "es2018.promise", "es2021"],
     },
-    "include": ["src/**/*.ts"]
+    "include": ["src/*.ts"]
 }

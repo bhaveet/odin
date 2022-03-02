@@ -30,7 +30,10 @@
   },
   "homepage": "https://github.com/bhaveet/odin#readme",
   "dependencies": {
+    "auto-bind": "^5.0.1",
     "jest": "^27.5.1",
+    "mongoose": "^6.2.4",
+    "redis": "^4.0.4",
     "save": "^2.4.0",
     "uuid": "^8.3.2"
   },
@@ -51,17 +54,17 @@
     "typescript": "^4.5.5"
   },
   "jest": {
-  "globals": {
-    "ts-jest": {
-      "tsconfig": "tsconfig.json"
-    }
-  },
-  "moduleFileExtensions": [
-    "ts",
-    "js"
-  ],
-  "testMatch": [
-    "**/build/**/*.(test|spec).js"
-  ]
-}
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.json"
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testMatch": [
+      "**/build/**/*.(test|spec).js"
+    ]
+  }
 }

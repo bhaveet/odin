@@ -4,11 +4,9 @@ import { createConnection } from 'typeorm'
 import * as PostgressConnectionStringParser from 'pg-connection-string'
 
 const connectPostgres = async (configs: any)=> {
-  const { CONNECTION_URL } = configs
-  // const connectionOptions = PostgressConnectionStringParser.parse(CONNECTION_URI)
-  //
+  const { CONNECTION_URL, host, port, username, password, database, synchronize, logging } = configs
+  // const connectionOptions = PostgressConnectionStringParser.parse(CONNECTION_URL)
   // const { host, port, username, password, database, synchronize, logging } = connectionOptions
-
   await createConnection({
       type: 'postgres',
       url: CONNECTION_URL,
@@ -28,7 +26,6 @@ const POSTGRES = {
   connect: connectPostgres
 }
 
-console.log('POSTGRE OK');
 export default POSTGRES
 
 // OLD
